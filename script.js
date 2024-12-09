@@ -25,7 +25,7 @@ document.getElementById('calc-form').addEventListener('submit', function (e) {
     // Calculate TDEE
     const tdee = bmr * activity;
 
-    // Calculate Carb Intake
+    // คำนวณความต้องการคาร์บ
     const carbs = ((tdee * carbType) / 4) / 15;
 
     // Display Results
