@@ -1,5 +1,5 @@
 body {
-    font-family: open sans,kanit;
+    font-family: Arial, sans-serif;
     background-color: #f9fafb;
     margin: 0;
     padding: 20px;
@@ -15,7 +15,7 @@ body {
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     text-align: center;
 }
 
