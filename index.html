@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carb Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Carbohydrate Calculator</h1>
+        <form id="calc-form">
+            <!-- Input Fields -->
+            <label for="weight">น้ำหนัก (กิโลกรัม):</label>
+            <input type="number" id="weight" placeholder="เช่น 70" required>
+
+            <label for="height">ส่วนสูง (เซนติเมตร):</label>
+            <input type="number" id="height" placeholder="เช่น 170" required>
+
+            <label for="age">อายุ (ปี):</label>
+            <input type="number" id="age" placeholder="เช่น 25" required>
+
+            <label>เพศ:</label>
+            <div>
+                <input type="radio" name="gender" value="male" checked> ชาย
+                <input type="radio" name="gender" value="female"> หญิง
+            </div>
+
+            <label for="activity">ระดับกิจกรรม:</label>
+            <select id="activity">
+                <option value="1.2">นั่งทำงาน (1.2)</option>
+                <option value="1.375">ออกกำลังกายเบา (1.375)</option>
+                <option value="1.55">ออกกำลังกายปานกลาง (1.55)</option>
+                <option value="1.725">ออกกำลังกายหนัก (1.725)</option>
+                <option value="1.9">ออกกำลังกายหนักมาก (1.9)</option>
+            </select>
+
+            <label for="carb-type">รูปแบบความต้องการปริมาณคาร์โบไฮเดรต:</label>
+            <select id="carb-type">
+                <option value="0.2">คาร์บ 20%</option>
+                <option value="0.4">คาร์บ 40%</option>
+                <option value="0.55">คาร์บ 55%</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">คำนวณ</button>
+        </form>
+
+        <!-- Results Section -->
+        <div id="results" class="hidden">
+            <h2>ผลการคำนวณ</h2>
+            <p id="bmr-result">BMR: </p>
+            <p id="tdee-result">TDEE: </p>
+            <p id="carb-result">ปริมาณคาร์โบไฮเดรตต่อวัน: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
