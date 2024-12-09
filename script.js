@@ -14,10 +14,13 @@ document.getElementById('calc-form').addEventListener('submit', function (e) {
         return;
     }
 
-  // Calculate BMR
-    const bmr = gender === 'male'
-        ? (10 * weight) + (6.25 * height) - (5 * age) + 5
-        : (10 * weight) + (6.25 * height) - (5 * age) - 161;
+ // คำนวณ BMR
+    let bmr;
+    if (gender === "male") {
+        bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+    } else {
+        bmr = 665 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+    }
 
     // Calculate TDEE
     const tdee = bmr * activity;
