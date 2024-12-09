@@ -14,7 +14,7 @@ document.getElementById('calc-form').addEventListener('submit', function (e) {
         return;
     }
 
-    // Calculate BMR
+  // Calculate BMR
     const bmr = gender === 'male'
         ? (10 * weight) + (6.25 * height) - (5 * age) + 5
         : (10 * weight) + (6.25 * height) - (5 * age) - 161;
