@@ -9,6 +9,11 @@ document.getElementById('calc-form').addEventListener('submit', function (e) {
     const activity = parseFloat(document.getElementById('activity').value);
     const carbType = parseFloat(document.getElementById('carb-type').value);
 
+     if (!weight || !height || !age || !activity || !carbType) {
+        alert("กรุณากรอกข้อมูลให้ครบถ้วน!");
+        return;
+    }
+
     // Calculate BMR
     const bmr = gender === 'male'
         ? (10 * weight) + (6.25 * height) - (5 * age) + 5
