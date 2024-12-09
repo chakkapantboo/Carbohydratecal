@@ -29,9 +29,9 @@ document.getElementById('calc-form').addEventListener('submit', function (e) {
     const carbs = ((tdee * carbType) / 4) / 15;
 
     // Display Results
-    document.getElementById('bmr-result').textContent = `BMR: ${bmr.toFixed(2)} kcal/day`;
-    document.getElementById('tdee-result').textContent = `TDEE: ${tdee.toFixed(2)} kcal/day`;
-    document.getElementById('carb-result').textContent = `ปริมาณคาร์โบไฮเดรต: ${carbs.toFixed(2)} กรัม/มื้อ (15 มื้อ)`;
+    document.getElementById('bmr-result').textContent = `BMR: ${bmr.toFixed(2)} แคลอรี/วัน`;
+    document.getElementById('tdee-result').textContent = `TDEE: ${tdee.toFixed(2)} แคลอรี/วัน`;
+    document.getElementById('carb-result').textContent = `ควรรับประทานคาร์โบไฮเดรต: ${carbs.toFixed(2)} คาร์บต่อวัน`;
 
     document.getElementById('results').classList.remove('hidden');
 });
